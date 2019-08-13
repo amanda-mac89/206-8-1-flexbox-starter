@@ -95,76 +95,158 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-html {
-  background-color: #fff;
-  height: 100%;
-  width: 100%;
-}
+   html {
+       color: #222;
+       font-size: 1em;
+       line-height: 1.4;
+   }
 
-body {
-  font-family: 'Source Sans Pro', sans-serif;
-  padding: 0 2em;
-  font-size: 1.25em;
-  height: 100%;
-  color: #fff;
-}
+   /*
+    * Remove text-shadow in selection highlight:
+    * https://twitter.com/miketaylr/status/12228805301
+    *
+    * These selection rule sets have to be separate.
+    * Customize the background color to match your design.
+    */
 
-header,
-footer {
-  background-color: #222;
-  height: 80px;
-  width: 100%;
-}
+   ::-moz-selection {
+       background: #b3d4fc;
+       text-shadow: none;
+   }
 
-main {
-  background-color: #ccc;
-  height: 250px;
-  width: 100%;
-}
+   ::selection {
+       background: #b3d4fc;
+       text-shadow: none;
+   }
 
-header,
-footer,
-main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+   /*
+    * A better looking default horizontal rule
+    */
 
-#div-1,
-#div-2,
-#div-3 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  line-height: 1.5em;
-  font-size: 1.25em;
-  height: auto;
-}
+   hr {
+       display: block;
+       height: 1px;
+       border: 0;
+       border-top: 1px solid #ccc;
+       margin: 1em 0;
+       padding: 0;
+   }
 
-.wrapper span {
-  font-family: 'Lora', sans-serif;
-  font-size: 1.3em;
-}
+   /*
+    * Remove the gap between audio, canvas, iframes,
+    * images, videos and the bottom of their containers:
+    * https://github.com/h5bp/html5-boilerplate/issues/440
+    */
 
-.flex-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-  justify-content: space-between;
-}
+   audio,
+   canvas,
+   iframe,
+   img,
+   svg,
+   video {
+       vertical-align: middle;
+   }
 
-.flex-items {
-  line-height: 1.5em;
-  font-size: 1.6em;
-  background-color: #f16059;
-  width: 30%;
-  height: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+   /*
+    * Remove default fieldset styles.
+    */
+
+   fieldset {
+       border: 0;
+       margin: 0;
+       padding: 0;
+   }
+
+   /*
+    * Allow only vertical resizing of textareas.
+    */
+
+   textarea {
+       resize: vertical;
+   }
+
+   /* ==========================================================================
+      Browser Upgrade Prompt
+      ========================================================================== */
+
+   .browserupgrade {
+       margin: 0.2em 0;
+       background: #ccc;
+       color: #000;
+       padding: 0.2em 0;
+   }
+
+   /* ==========================================================================
+      Author's custom styles
+      ========================================================================== */
+
+   /*Large Background Image*/
+   html {
+     background-color: #AF757D;
+     height: 100%;
+     width: 100%;
+   }
+
+   body {
+     font-family: 'Source Sans Pro', sans-serif;
+     padding: 0em 2em;
+     font-size: 1.25em;
+     color: white;
+     display: flex;
+     justify-content: center;
+   }
+
+   .flex-container {
+     display: flex;
+     flex-flow: row wrap;
+     justify-content: space-between;
+     max-width: 1200px;
+   }
+
+   p span {
+     font-family: 'Lora', sans-serif;
+     color: #DDD1C7;
+   }
+
+   header,
+   footer {
+     width: 100%;
+     display: flex;
+     justify-content: flex-start;
+   }
+
+   header h1 {
+     font-family: 'Lora', sans-serif;
+     font-size: 3em;
+   }
+
+   main {
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     border-bottom: 1px solid #fff;
+   }
+
+   main p {
+     font-size: 1.35em;
+   }
+
+   .flex-items {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     line-height: 1.5em;
+     font-size: 1em;
+     width: 30%;
+   }
+
+   footer {
+     border-top: 1px solid #fff;
+   }
+
+   footer i {
+     padding: 30px 20px 0 0;
+   }
 
 /* ==========================================================================
    Helper classes
